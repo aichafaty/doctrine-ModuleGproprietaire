@@ -17,7 +17,7 @@ interface ManagerRegistry extends ConnectionRegistry
     /**
      * Gets a named object manager.
      *
-     * @param string $name The object manager name (null for the default one).
+     * @param string|null $name The object manager name (null for the default one).
      *
      * @return ObjectManager
      */
@@ -63,17 +63,20 @@ interface ManagerRegistry extends ConnectionRegistry
     public function getAliasNamespace($alias);
 
     /**
-     * Gets all object manager names.
+     * Gets all object manager names and associated service IDs. A service ID
+     * is a string that allows to obtain an object manager, typically from a
+     * PSR-11 container.
      *
-     * @return string[] An array of object manager names.
+     * @return array<string,string> An array with object manager names as keys,
+     *                              and service IDs as values.
      */
     public function getManagerNames();
 
     /**
      * Gets the ObjectRepository for a persistent object.
      *
-     * @param string $persistentObject      The name of the persistent object.
-     * @param string $persistentManagerName The object manager name (null for the default one).
+     * @param string      $persistentObject      The name of the persistent object.
+     * @param string|null $persistentManagerName The object manager name (null for the default one).
      * @psalm-param class-string<T> $persistentObject
      *
      * @return ObjectRepository
