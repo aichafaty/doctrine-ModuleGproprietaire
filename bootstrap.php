@@ -22,7 +22,7 @@ $conn=array(
     'host' => '127.0.0.1',
     'user' => 'root',
     'password' => '',
-    'dbname' => 'mvcdblpgl',
+    'dbname' => 'Doctrine_Gpropriete',
 
 );
 // obtaining the entity manager
