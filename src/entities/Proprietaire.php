@@ -1,5 +1,11 @@
 <?php
 
+namespace src\entities;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+
+
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -40,6 +46,9 @@ class Proprietaire{
     private $CIN;
 
     /**
+
+     * @ORM\Column(type="string")
+
      * @ORM\Column(type="datetime")
      */
     private $dateNaissance;
@@ -54,6 +63,11 @@ class Proprietaire{
      */
     private $telephone;
 
+
+     
+
+
+
     /** One proprietaire has many proprietes. This is the inverse side.
      * @ORM\OneToMany(targetEntity="Propriete", mappedBy="proprietaire")
      */
@@ -61,7 +75,9 @@ class Proprietaire{
 
     public function __construct()
     {
+
         $this->propriete=new ArrayCollection();
+
 
     }
 
@@ -210,5 +226,6 @@ class Proprietaire{
     }
 
 
-
 }
+
+?>
