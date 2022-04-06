@@ -17,15 +17,15 @@ class TypePropriete{
      * @ORM\Column(type="string")
      */
     private $libelle;
-    /** One type_propriete has many proprietes. This is the inverse side.
-     * @ORM\OneToMany(targetEntity="Propriete", mappedBy="type_propriete")
-     */
-
-    private $type_propriete;
-    public function __construct()
-    {
-        $this->type_propriete=new ArrayCollection();
-    }
+//    /** One type_propriete has many proprietes. This is the inverse side.
+//     * @ORM\OneToMany(targetEntity="Propriete", mappedBy="type_propriete")
+//     */
+//
+//    private $type_propriete;
+//    public function __construct()
+//    {
+//        $this->type_propriete=new ArrayCollection();
+//    }
 
     /**
      * @return mixed

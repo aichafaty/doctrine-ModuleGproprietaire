@@ -9,22 +9,22 @@
   <title>Dashio - Bootstrap Admin Template</title>
 
   <!-- Favicons -->
-  <link href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/img/favicon.png" rel="icon">
+  <link href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/img/favicon.png" rel="icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <link href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
-  <link href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/css/zabuto_calendar.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/lib/gritter/css/jquery.gritter.css" />
+  <link href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/lib/gritter/css/jquery.gritter.css" />
   <!-- Custom styles for this template -->
-  <link href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/css/style.css" rel="stylesheet">
-  <link href="http://localhost/doctrine-ModuleGproprietaire/src/public/template/css/style-responsive.css" rel="stylesheet">
+  <link href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/css/style.css" rel="stylesheet">
+  <link href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/css/style-responsive.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="http://localhost/doctrine-ModuleGproprietaire/src/public/template/lib/chart-master/Chart.js"></script>
+  <script src="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/lib/chart-master/Chart.js"></script>
 
   <!-- =======================================================
     Template Name: Dashio
@@ -72,7 +72,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="http://localhost/doctrine-ModuleGproprietaire/src/public/template/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="profile.html"><img src="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
           <li class="mt">
             <a class="active" href="home">
@@ -86,8 +86,8 @@
               <span>Proprietaires</span>
               </a>
             <ul class="sub">
-              <a href="http://localhost/doctrine-ModuleGproprietaire/Proprietaire/index">List</a>
-              <a href="http://localhost/doctrine-ModuleGproprietaire/Proprietaire/create">add</a>
+              <a href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/index">List</a>
+              <a href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/create">add</a>
             </ul>
           </li>
          

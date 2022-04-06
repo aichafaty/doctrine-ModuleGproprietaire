@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-8 m-auto">
                 <h1 class="my-5 text-center">Add Proprietaire</h1>
-                <form action="http://localhost/doctrine-ModuleGproprietaire/Proprietaire/add" method="post">
+                <form action="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/add" method="post">
                     <div class="mb-3">
                         <label for="nom" class="form-label fs-2">Nom</label>
                         <input type="text" class="form-control" id="nom" name="nom"> 

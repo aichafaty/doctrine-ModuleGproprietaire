@@ -21,23 +21,23 @@ class Quartier{
      */
     private $libelle;
 
-    /**
-     * Many quartiers have one commune. This is the owning side.
-     *@ORM\ ManyToOne(targetEntity="Commune", inversedBy="quartiers")
-     * @ORM\JoinColumn(name="commune_id", referencedColumnName="id")
-     */
-    private $commune;
-
-    /** One quartier has many proprietes. This is the inverse side.
-     * @ORM\OneToMany(targetEntity="Propriete", mappedBy="quartier")
-     */
-
-    private $propriete;
-
-    public function __construct()
-    {
-        $this->propriete=new ArrayCollection();
-    }
+//    /**
+//     * Many quartiers have one commune. This is the owning side.
+//     *@ORM\ ManyToOne(targetEntity="Commune", inversedBy="quartiers")
+//     * @ORM\JoinColumn(name="commune_id", referencedColumnName="id")
+//     */
+//    private $commune;
+//
+//    /** One quartier has many proprietes. This is the inverse side.
+//     * @ORM\OneToMany(targetEntity="Propriete", mappedBy="quartier")
+//     */
+//
+//    private $propriete;
+//
+//    public function __construct()
+//    {
+//        $this->propriete=new ArrayCollection();
+//    }
 
     /**
      * @return mixed
