@@ -1,7 +1,10 @@
 <?php
 namespace src\model;
 use libs\system\Model;
-use src\entities\Proprietaire;
+use Proprietaire;
+
+require_once dirname(__DIR__).".\..\config\autoload.php";
+
 class ProprietaireDb extends Model
 {
     public function __construct()
@@ -11,12 +14,11 @@ class ProprietaireDb extends Model
     }
   
     public function findAll(){
-      
-      //return ["donnees"=>"LPGL"]; 
-      $proprietaire = $this->entityManager->getRepository('proprietaires');
-      $proprietaires = $proprietaire->findAll();
-      return $proprietaires;
-      
+
+//        $proprietaire = $this->entityManager->getRepository('Proprietaire');
+//             $proprietaires = $proprietaire->findAll();
+//      return $proprietaires;
+       return $this->entityManager->createQuery("SELECT p FROM proprietaire p ")->getResult();
         
     }
 
@@ -28,8 +30,8 @@ class ProprietaireDb extends Model
 
     public function edit($id)
     {
-        $proprietaire = $entityManager->find('Proprietaire', $id);
-        return $proprietaire;
+//        $proprietaire = $entityManager->find('Proprietaire', $id);
+//        return $proprietaire;
     }
 
     public function update()

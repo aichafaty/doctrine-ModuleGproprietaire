@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '749d17e9ce7f2e275690e907cee4b4f834a3ad7a',
+        'reference' => 'bdd6f3bb53e785a5d5b41fed911f23d476f6614e',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '749d17e9ce7f2e275690e907cee4b4f834a3ad7a',
+            'reference' => 'bdd6f3bb53e785a5d5b41fed911f23d476f6614e',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -56,12 +56,12 @@
             'dev_requirement' => false,
         ),
         'doctrine/dbal' => array(
-            'pretty_version' => '3.3.4',
-            'version' => '3.3.4.0',
+            'pretty_version' => '3.3.5',
+            'version' => '3.3.5.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/dbal',
             'aliases' => array(),
-            'reference' => '83f779beaea1893c0bece093ab2104c6d15a7f26',
+            'reference' => '719663b15983278227669c8595151586a2ff3327',
             'dev_requirement' => false,
         ),
         'doctrine/deprecations' => array(
@@ -182,12 +182,12 @@
             'dev_requirement' => false,
         ),
         'symfony/cache-contracts' => array(
-            'pretty_version' => 'v2.5.0',
-            'version' => '2.5.0.0',
+            'pretty_version' => 'v2.5.1',
+            'version' => '2.5.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/cache-contracts',
             'aliases' => array(),
-            'reference' => 'ac2e168102a2e06a2624f0379bde94cd5854ced2',
+            'reference' => '64be4a7acb83b6f2bf6de9a02cee6dad41277ebc',
             'dev_requirement' => false,
         ),
         'symfony/cache-implementation' => array(
@@ -206,12 +206,12 @@
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
-            'pretty_version' => 'v2.5.0',
-            'version' => '2.5.0.0',
+            'pretty_version' => 'v2.5.1',
+            'version' => '2.5.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
-            'reference' => '6f981ee24cf69ee7ce9736146d1c57c2780598a8',
+            'reference' => 'e8b495ea28c1d97b5e0c121748d6f9b53d075c66',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
@@ -278,12 +278,12 @@
             'dev_requirement' => false,
         ),
         'symfony/service-contracts' => array(
-            'pretty_version' => 'v2.5.0',
-            'version' => '2.5.0.0',
+            'pretty_version' => 'v2.5.1',
+            'version' => '2.5.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/service-contracts',
             'aliases' => array(),
-            'reference' => '1ab11b933cd6bc5464b08e81e2c5b07dec58b0fc',
+            'reference' => '24d9dc654b83e91aa59f9d167b131bc3b5bea24c',
             'dev_requirement' => false,
         ),
         'symfony/string' => array(

@@ -20,31 +20,31 @@ class Propriete{
      */
     private $libelle;
 
-    /**
-     * Many proprietes have one quartier. This is the owning side.
-     *@ORM\ ManyToOne(targetEntity="Quartier", inversedBy="proprietes")
-     * @ORM\JoinColumn(name="quartier_id", referencedColumnName="id")
-     */
-    private $quartier;
-    /**
-     * Many proprietes have one type_propriete. This is the owning side.
-     *@ORM\ ManyToOne(targetEntity="Typepropriete", inversedBy="proprietes")
-     * @ORM\JoinColumn(name="typePropriete_id", referencedColumnName="id")
-     */
-    private $type_propriete;
-
-    /**
-     * Many proprietes have one type_proprietaire. This is the owning side.
-     *@ORM\ ManyToOne(targetEntity="Proprietaire", inversedBy="proprietes")
-     * @ORM\JoinColumn(name="proprietaire_id", referencedColumnName="id")
-     */
-    private $proprietaire;
-
-
-    public function __construct()
-    {
-
-    }
+//    /**
+//     * Many proprietes have one quartier. This is the owning side.
+//     *@ORM\ ManyToOne(targetEntity="Quartier", inversedBy="proprietes")
+//     * @ORM\JoinColumn(name="quartier_id", referencedColumnName="id")
+//     */
+//    private $quartier;
+//    /**
+//     * Many proprietes have one type_propriete. This is the owning side.
+//     *@ORM\ ManyToOne(targetEntity="Typepropriete", inversedBy="proprietes")
+//     * @ORM\JoinColumn(name="typePropriete_id", referencedColumnName="id")
+//     */
+//    private $type_propriete;
+//
+//    /**
+//     * Many proprietes have one type_proprietaire. This is the owning side.
+//     *@ORM\ ManyToOne(targetEntity="Proprietaire", inversedBy="proprietes")
+//     * @ORM\JoinColumn(name="proprietaire_id", referencedColumnName="id")
+//     */
+//    private $proprietaire;
+//
+//
+//    public function __construct()
+//    {
+//
+//    }
 
     /**
      * @return mixed

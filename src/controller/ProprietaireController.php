@@ -1,8 +1,8 @@
 <?php
-// namespace src\controller;
 use libs\system\Controller;
 use src\model\ProprietaireDb;
-use src\entities\Proprietaire;
+require_once dirname(__DIR__).".\..\config\autoload.php";
+
 class ProprietaireController extends Controller
 {
     private $proprietaireDb;
@@ -13,12 +13,12 @@ class ProprietaireController extends Controller
    public function index()
    {
        $proprietaires= $this->proprietaireDb->findAll();
-        return $this->view->load("proprietaires/list",$proprietaire);
+        return $this->view->load("proprietaires/list",$proprietaires);
+
    }
 
     public function create() {
-        
-        return $this->view->load("proprietaires/add");
+      return $this->view->load("proprietaires/add");
     }
    public function add()
    {

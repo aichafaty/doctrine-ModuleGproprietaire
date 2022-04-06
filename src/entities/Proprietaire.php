@@ -1,12 +1,7 @@
 <?php
 
-namespace src\entities;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\ORM\Mapping as ORM;
+require_once dirname(__DIR__).".\..\config\autoload.php";
 
-
-
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -68,18 +63,18 @@ class Proprietaire{
 
 
 
-    /** One proprietaire has many proprietes. This is the inverse side.
-     * @ORM\OneToMany(targetEntity="Propriete", mappedBy="proprietaire")
-     */
-    private $propriete;
+//    /** One proprietaire has many proprietes. This is the inverse side.
+//     * @ORM\OneToMany(targetEntity="Propriete", mappedBy="proprietaire")
+//     */
+//    private $propriete;
 
-    public function __construct()
-    {
-
-        $this->propriete=new ArrayCollection();
-
-
-    }
+//    public function __construct()
+//    {
+//
+//       // $this->propriete=new ArrayCollection();
+//
+//
+//    }
 
     /**
      * @return mixed
