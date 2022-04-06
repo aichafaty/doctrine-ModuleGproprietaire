@@ -1,5 +1,7 @@
 <?php
+
 namespace src\entities;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -78,3 +80,5 @@ class Propriete{
 
 
 }
+
+?>
