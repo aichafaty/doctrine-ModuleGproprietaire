@@ -75,10 +75,7 @@
           <p class="centered"><a href="profile.html"><img src="http://localhost/mesProjest/doctrine-ModuleGproprietaire/src/public/template/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
           <li class="mt">
-            <a class="active" href="home">
-              <i class="fa fa-dashboard"></i>
-              <span>Home</span>
-              </a>
+          
           </li>
           <li class="sub-menu">
             <a href="javascript:;">

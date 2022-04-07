@@ -14,7 +14,6 @@ class ProprietaireController extends Controller
    {
        $proprietaires= $this->proprietaireDb->findAll();
         return $this->view->load("proprietaires/list",$proprietaires);
-
    }
 
     public function create() {
@@ -31,8 +30,41 @@ class ProprietaireController extends Controller
        $proprietaire->setCIN($_POST['numpiece']);
        $proprietaire->setCivilite($_POST['civilite']);
        $proprietaire->setSexe($_POST['sexe']);
-       $this->proprietaireDb->add($proprietaire);
+      $prop = $this->proprietaireDb->add($proprietaire);
+       header("location: http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/index");
    }
+
+    public function edit()
+    {
+        $id=$_GET['id'];
+        $proprietaire = $this->proprietaireDb->edit($id);
+        return $this->view->load("proprietaires/edit",$proprietaire);
+
+
+    }
+
+    public function modififier() {
+        $id=(int)$_POST['id'];
+
+        $proprietaire = $this->proprietaireDb->edit($id);
+
+        $proprietaire->setNom($_POST['nom']);
+        $proprietaire->setPrenom($_POST['prenom']);
+        $proprietaire->setTelephone($_POST['telephone']);
+        $proprietaire->setDateNaissance($_POST['dateNaissance']);
+        $proprietaire->setLieuxNaissance($_POST['lieuNaissance']);
+        $proprietaire->setCIN($_POST['numpiece']);
+        $proprietaire->setCivilite($_POST['civilite']);
+        $proprietaire->setSexe($_POST['sexe']);
+        $this->proprietaireDb->update($proprietaire);
+        header("location: http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/index");
+    }
+
+    public function delete() {
+        $id=$_GET['id'];
+       $prprietaire= $this->proprietaireDb->delete($id);
+        header("location: http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/index");
+    }
         
-    
+
 }
