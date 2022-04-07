@@ -33,8 +33,8 @@
                                     echo "<td>" . $proprietaire->getTelephone(). "</td>";
                                     echo "<td>";
 
-                                    echo '<button type="button" class="btn btn-warning fs-5 mx-1">edit</button>';
-                                    echo '<button type="button" class="btn btn-danger fs-5 mx-1">delete</button>';
+                                    echo '<a href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/edit ?id='.$proprietaire->getId().'"><button type="button" class="btn btn-warning fs-5 mx-1">edit</button></a>';
+                                    echo '<a href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/delete?id='. $proprietaire->getId() .'"><button type="button" class="btn btn-danger fs-5 mx-1">delete</button></a>';
                                     echo "</td>";
                                     echo "</tr>";
 
