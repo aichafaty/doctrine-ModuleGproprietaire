@@ -44,13 +44,19 @@ class ProprietaireController extends Controller
     }
 
     public function modififier() {
+        $id=(int)$_POST['id'];
 
-        $id=$_GET['id'];
-        $data = $this->proprietaireDb->edit($id);
-        $data->setNom($_POST['nom']);
-        $data->setPrenom($_POST['prenom']);
+        $proprietaire = $this->proprietaireDb->edit($id);
 
-        $this->proprietaireDb->update();
+        $proprietaire->setNom($_POST['nom']);
+        $proprietaire->setPrenom($_POST['prenom']);
+        $proprietaire->setTelephone($_POST['telephone']);
+        $proprietaire->setDateNaissance($_POST['dateNaissance']);
+        $proprietaire->setLieuxNaissance($_POST['lieuNaissance']);
+        $proprietaire->setCIN($_POST['numpiece']);
+        $proprietaire->setCivilite($_POST['civilite']);
+        $proprietaire->setSexe($_POST['sexe']);
+        $this->proprietaireDb->update($proprietaire);
         header("location: http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/index");
     }
 

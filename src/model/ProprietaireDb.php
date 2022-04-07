@@ -32,10 +32,14 @@ class ProprietaireDb extends Model
         return $proprietaire;
     }
 
-
-    public function update()
+    public function update($proprietaire)
     {
-        $this->entityManager->flush();
+        $p = $this->entityManager->getRepository('Proprietaire')->find($proprietaire);
+        if ($p != null) {
+            $this->entityManager->merge($p);
+            $this->entityManager->flush();
+        }
+
     }
 
     public function delete($id){

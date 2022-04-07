@@ -4,8 +4,9 @@
     <div class="row">
         <div class="col-sm-12 col-md-8 m-auto">
             <h1 class="my-5 text-center">Edit Proprietaire</h1>
-            <form action="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/modififier?id='.$proprietaire->getId().'" method="post">
+            <form action="http://localhost/mesProjest/doctrine-ModuleGproprietaire/Proprietaire/modififier?id='.$data->getId().'" method="post">
                 <div class="mb-3">
+                    <input type="text" class="form-control fs-2 hidden"  id="nom" name="id" value="<?=$data->getId()?>" > <label for="nom" class="form-label fs-2" name="id"  value="<?=$data->getId()?>"></label>
                     <label for="nom" class="form-label fs-2" >Nom</label>
                     <input type="text" class="form-control fs-2"  id="nom" name="nom" value="<?=$data->getNom()?>">
                 </div>
